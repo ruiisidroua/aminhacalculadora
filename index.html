@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>A minha calculadora!</h1>
+
+    <div class="row mt-5 mb-5 ml-1 mr-1">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table">
+                       
+                        <tbody>
+                          <tr>
+                            <td colspan="4">
+                                
+                                <input class="form-control form-control-lg" type="text" placeholder="0.0" aria-label=".form-control-lg example" id="resultados">
+
+                            </td>
+                           
+                          </tr>
+                          <tr>
+                            <td ><button type="button" class="btn btn-secondary"  onclick="addVal(7);">7</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="addVal(8);">8</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="addVal(9);">9</button></td>
+                            <td><button type="button" class="btn btn-primary" onclick="operation('+');">+</button></td>
+                          </tr>
+                          <tr>
+                            <td ><button type="button" class="btn btn-secondary" onclick="addVal(4);">4</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="addVal(5);">5</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="addVal(6);">6</button></td>
+                            <td><button type="button" class="btn btn-primary" onclick="operation('-');">-</button></td>
+                          </tr>
+                          <tr>
+                            <td ><button type="button" class="btn btn-secondary"  onclick="addVal(1);">1</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="addVal(2);">2</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="addVal(3);">3</button></td>
+                            <td><button type="button" class="btn btn-primary" onclick="operation('*');">*</button></td>
+                          </tr>
+                          <tr>
+                            <td >&nbsp;</td>
+                            <td><button type="button" class="btn btn-secondary"  onclick="addVal(0);">0   </button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="operation('C');">C</button></td>
+                            <td><button type="button" class="btn btn-primary" onclick="operation('/');">/</button></td>
+                          </tr> 
+                          <tr>
+                            <td colspan="4">
+
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="button"  onclick="calculate();">=</button>
+                                  </div>
+
+                            </td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
